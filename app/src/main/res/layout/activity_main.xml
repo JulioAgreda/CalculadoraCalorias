@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.critico.calculadoracalorias.MainActivity">
+
+    <TextView
+        android:id="@+id/txtSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:text="Sexo:"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rgbSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_below="@+id/txtSexo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/rbHombre"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Hombre"/>
+
+        <RadioButton
+            android:id="@+id/rbMujer"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Mujer"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:text="Peso:"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_below="@+id/rgbSexo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_row="3"
+        android:ems="10"
+        android:hint="Ingrese su Peso"
+        android:inputType="number"
+        app:layout_constraintLeft_toRightOf="@+id/txtEdad"
+        tools:layout_editor_absoluteY="282dp"
+        android:layout_below="@+id/txtPeso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rgbPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/txtPeso"
+        android:layout_alignLeft="@+id/rgbSexo"
+        android:layout_alignStart="@+id/rgbSexo">
+
+        <RadioButton
+            android:id="@+id/rbKilos"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Kilos"/>
+
+        <RadioButton
+            android:id="@+id/rbLibras"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Libras"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtEstatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="6"
+        android:inputType="number"
+        android:text="Estatura:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="241dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rgbPeso" />
+
+    <EditText
+        android:id="@+id/txEstatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_row="6"
+        android:ems="10"
+        android:hint="Centimetros"
+        android:inputType="number"
+        app:layout_constraintLeft_toRightOf="@+id/txtEstatura"
+        tools:layout_editor_absoluteY="223dp"
+        android:layout_below="@+id/txtEstatura"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="8"
+        android:text="Edad:"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="282dp"
+        android:layout_below="@+id/txEstatura"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_row="8"
+        android:ems="10"
+        android:hint="Años"
+        android:inputType="number"
+        app:layout_constraintLeft_toRightOf="@+id/txtEdad"
+        tools:layout_editor_absoluteY="282dp"
+        android:layout_below="@+id/txEstatura"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:id="@+id/txtActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="9"
+        android:text="Actividad:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="343dp"
+        android:layout_below="@+id/txEdad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_row="9"
+        app:layout_constraintLeft_toRightOf="@+id/txtActividad"
+        tools:layout_editor_absoluteY="336dp"
+        android:layout_below="@+id/txtActividad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_row="11"
+        android:text="Calcular"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="408dp"
+        android:layout_below="@+id/spActividad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    Spinner spinner_animales = (Spinner) findViewById(R.id.spinner_animales);
+    ArrayAdapter spinner_adapter = ArrayAdapter.createFromResource( this, R.array.animales ,
+    android.R.layout.simple_spinner_item);
+    spinner_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    spinner_animales.setAdapter(spinner_adapter);
+
+</RelativeLayout>

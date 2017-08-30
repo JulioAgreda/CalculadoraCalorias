@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CalculadoraCalorias</string>
+    <string name="resultado_form_title">Resultados</string>
+</resources>
