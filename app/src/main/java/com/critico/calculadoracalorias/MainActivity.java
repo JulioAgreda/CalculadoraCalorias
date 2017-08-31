@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity
     private int pes;
     private String actividad;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -55,6 +54,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+
                 peso =(EditText)findViewById(R.id.txPeso);
                 estatura =(EditText)findViewById(R.id.txEstatura);
                 edad =(EditText)findViewById(R.id.txPeso);
