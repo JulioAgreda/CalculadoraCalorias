@@ -32,6 +32,7 @@
 
         <RadioButton
             android:id="@+id/rbHombre"
+            android:checked="true"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Hombre"/>
@@ -84,6 +85,7 @@
         <RadioButton
             android:id="@+id/rbKilos"
             android:layout_width="100dp"
+            android:checked="true"
             android:layout_height="wrap_content"
             android:text="Kilos"/>
 
