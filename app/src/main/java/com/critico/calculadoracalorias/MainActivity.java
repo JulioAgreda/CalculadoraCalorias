@@ -146,9 +146,9 @@ public class MainActivity extends AppCompatActivity
     public void bajarSubirCalorias(int mb)
     {
         // Calorias para bajar de peso
-        cb = (int)mb - (mb*15/100);
+        cb = (int)cmp - (cmp*15/100);
         // Calorias para subir de peso
-        cs = (int)mb + (mb*15/100);
+        cs = (int)cmp + (cmp*15/100);
     }
 
     public void enviar()
